@@ -1,0 +1,250 @@
+@media (min-width: 360px) and (max-width: 932px) {
+    body {
+        font-family: Arial, sans-serif;
+        background-color: rgb(235, 239, 255);
+        padding: 0;
+        margin: 0;
+
+
+
+
+
+
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    /*------------- header  section  starts*---------------------*/
+
+
+    .header-main {
+        background-color: #3A4E9A;
+        margin-bottom: 20px;
+        position: fixed;
+        width: 100%;
+        overflow: hidden;
+        top: 0;
+    }
+
+    .header-partfirst {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+
+
+
+    }
+
+    .header-profile {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-partsecond {
+        padding: 20px 20px 30px 20px;
+    }
+
+    .search-container {
+        display: flex;
+        align-items: center;
+        background-color: #ffffff;
+        border-radius: 5px;
+        overflow: hidden;
+        width: 90%;
+        max-width: 600px;
+        margin-top: 20px;
+        padding: 0px 5px 0px 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        margin: auto;
+        /* Adds subtle shadow */
+
+    }
+
+    .search-input {
+        border: none;
+        outline: none;
+        padding: 10px;
+        flex: 1;
+        font-size: 14px;
+        color: #6c6c6c;
+        height: 30px;
+    }
+
+    .search-input::placeholder {
+        color: #c1c1c1;
+    }
+
+    .search-button {
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .search-icon {
+        width: 20px;
+        height: 20px;
+        filter: invert(50%);
+        padding: 5px;
+        /* Adjust for visibility */
+    }
+
+
+    /*------------- header  section ends*---------------------*/
+
+
+    /*------------- Categories section  starts*---------------------*/
+
+
+    .categories-main {
+        margin-bottom: 30px;
+        margin-top: 190px;
+        display: block
+    }
+
+
+    .categoires-firstpart {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        margin-bottom: 10px;
+
+    }
+
+    .categoires-secondpart {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+
+    }
+
+    .categories-sub {
+        text-align: center;
+        border-radius: 10px;
+        width: 18%;
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+        padding: 5px;
+        background-color: #ffffff;
+
+
+    }
+
+    .categories-icons {
+        height: 40px;
+        width: 40px;
+    }
+
+    .categories-text {
+        margin: 0;
+        font-size: 12px;
+    }
+
+
+    /*------------- Categories section  ends*---------------------*/
+
+
+
+    /*------------- Hospitals  section starts*---------------------*/
+
+    .Hospitals-firstpart {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+
+    }
+
+    .hospitals-list {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background-color: #ffffff;
+        margin: 20px;
+    }
+
+
+
+    .hospital-image {
+        height: 80px;
+        width: 80px;
+
+    }
+
+    .hospital-info {
+        margin-left: 20px;
+        line-height: 27px;
+    }
+
+    /*------------- Hospitals  section starts*---------------------*/
+
+    .doctors-firstpart {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+
+    }
+
+
+
+    .doctor-slider {
+        background-color: #ffffff;
+        width: 25%;
+        text-align: center;
+        border-radius: 5px;
+        padding: 10px;
+
+
+
+    }
+
+    .doctors-secondpart {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .doctor-img {
+        background: white;
+        border-radius: 5px;
+
+
+
+
+
+    }
+
+    .doctor-img img {
+        width: 100px;
+        height: 100px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 5px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
