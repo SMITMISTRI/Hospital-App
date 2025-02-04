@@ -1,0 +1,415 @@
+@media (min-width: 360px) and (max-width: 932px) {
+    body {
+        font-family: Arial, sans-serif;
+        background-color: rgb(235, 239, 255);
+        padding: 0;
+        margin: 0;
+
+
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    /*------------- header  section  starts*---------------------*/
+
+
+    .header-main {
+        background-color: #3A4E9A;
+        margin-bottom: 20px;
+        position: fixed;
+        width: 100%;
+        overflow-x: hidden;
+        top: 0;
+    }
+
+    .header-partfirst {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+
+
+
+    }
+
+
+    .header-profile {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-partsecond {
+        padding: 20px 20px 30px 20px;
+
+    }
+
+    .search-container {
+        display: flex;
+        align-items: center;
+        background-color: #ffffff;
+        border-radius: 5px;
+        overflow: hidden;
+        width: 90%;
+        max-width: 600px;
+        margin-top: 20px;
+        padding: 0px 5px 0px 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        margin: auto;
+        /* Adds subtle shadow */
+
+    }
+
+    .search-input {
+        border: none;
+        outline: none;
+        padding: 10px;
+        flex: 1;
+        font-size: 14px;
+        color: #6c6c6c;
+        height: 30px;
+    }
+
+    .search-input::placeholder {
+        color: #c1c1c1;
+    }
+
+    .search-button {
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .search-icon {
+        width: 20px;
+        height: 20px;
+        filter: invert(50%);
+        padding: 5px;
+        /* Adjust for visibility */
+    }
+
+
+    /*------------- header  section ends*---------------------*/
+
+
+    /*------------- Categories section  starts*---------------------*/
+
+
+    .categories-main {
+        margin-bottom: 30px;
+        margin-top: 190px;
+        display: block
+    }
+
+
+    .categoires-firstpart {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        margin-bottom: 10px;
+
+    }
+
+    .categoires-secondpart {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+
+    }
+
+    .categories-sub {
+        text-align: center;
+        border-radius: 10px;
+        width: 18%;
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+        padding: 5px;
+        background-color: #ffffff;
+
+
+    }
+
+    .categories-icons {
+        height: 40px;
+        width: 40px;
+    }
+
+    .categories-text {
+        margin: 0;
+        font-size: 12px;
+    }
+
+
+
+
+
+
+
+
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .doctor-main {
+        width: 100%;
+        height: 130px;
+        display: flex;
+        gap: 10px;
+
+
+    }
+
+    .doctor-list {
+        width: 30%;
+
+        background-color: beige;
+        padding: 10px;
+
+        img {
+            height: 80px;
+            width: 80px;
+            object-fit: cover;
+
+        }
+
+        p {
+            font-size: 12px;
+            margin: 0;
+        }
+
+
+    }
+
+    .slider-container {
+        position: relative;
+        /* Needed for positioning arrows */
+        width: 80%;
+        /* Adjust as needed */
+        margin: 20px auto;
+    }
+
+    .slick-prev,
+    .slick-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        /* Ensure arrows are above the slider */
+        background-color: transparent;
+        /* Make arrow background transparent */
+        border: none;
+        /* Remove default button border */
+        cursor: pointer;
+        font-size: 2em;
+        /* Adjust arrow size */
+        color: #333;
+        /* Arrow color */
+        padding: 0 10px;
+        /* Add some padding */
+        opacity: 0.7;
+        /* Initial opacity */
+        transition: opacity 0.3s ease;
+        /* Smooth transition for opacity */
+    }
+
+    .slick-prev:hover,
+    .slick-next:hover {
+        opacity: 1;
+        /* Opacity on hover */
+    }
+
+    .slick-prev {
+        left: 10px;
+        /* Position left arrow */
+    }
+
+    .slick-next {
+        right: 10px;
+        /* Position right arrow */
+    }
+
+    /* Styling for the custom arrows (optional) */
+    .slick-prev:before,
+    .slick-next:before {
+        font-family: "Arial";
+        /* Or any icon font you prefer */
+        /* content: "\2039";  Left Arrow Unicode */
+        /* content: "\203A";  Right Arrow Unicode */
+        /* OR use font-awesome or any other icon library */
+    }
+
+    /* Example using images as arrows */
+    .slick-prev {
+        background-image: url("left-arrow.png");
+        /* Path to your left arrow image */
+        background-size: contain;
+        /* or cover, depending on your image */
+        background-repeat: no-repeat;
+        text-indent: -9999px;
+        /* Hide default arrow text */
+        width: 30px;
+        /* Adjust width */
+        height: 30px;
+        /* Adjust height */
+    }
+
+    .slick-next {
+        background-image: url("right-arrow.png");
+        /* Path to your right arrow image */
+        background-size: contain;
+        background-repeat: no-repeat;
+        text-indent: -9999px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .slide {
+        /* Example slide styling */
+        background-color: #f0f0f0;
+        padding: 20px;
+        text-align: center;
+    }
+
+    div#slick-slide00 {
+        text-align: -webkit-center;
+    }
+
+    div#slick-slide01 {
+        text-align: -webkit-center;
+    }
+
+    div#slick-slide02 {
+        text-align: -webkit-center;
+    }
+
+    div#slick-slide03 {
+        text-align: -webkit-center;
+    }
+
+    div#slick-slide04 {
+        text-align: -webkit-center;
+    }
+
+    div#slick-slide05 {
+        text-align: -webkit-center;
+    }
+
+
+
+
+
+    .slider {
+        position: relative;
+        width: 80%;
+        max-width: 600px;
+        margin: auto;
+        overflow: hidden;
+        z-index: -1;
+    }
+
+    .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .slide1 {
+        min-width: 100%;
+        border-radius: 0px;
+    }
+
+    .dots {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .dot {
+        height: 10px;
+        width: 10px;
+        margin: 0 5px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .active {
+        background-color: #717171;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .footer-list {
+        margin: 0px 0px 5px 23px;
+        background-color: #3A4E9A;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0px 10px 0px;
+        border-radius: 15px;
+        position: fixed;
+        bottom: 0;
+        overflow: hidden;
+        width: 90%;
+    }
+
+    .footer-img {
+        height: 25px;
+        width: 25px;
+    }
+
+
+    .footer-tage {
+        text-align: center;
+
+        p {
+            margin: 0px;
+
+        }
+
+
+    }
+
+    .footer-tage span {
+        color: #ffffff;
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+    .footer-tage p {
+        text-decoration: none;
+    }
+
+}
